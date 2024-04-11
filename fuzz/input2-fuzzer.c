@@ -4,6 +4,8 @@
 
 #include "tmux.h"
 
+extern void input_parse_buffer(struct window_pane *, u_char *, size_t);
+
 extern int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size)
 {
     struct window_pane wp;
